@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store Market</title>
-    <link href="/Phone-shop/style/output.css" rel="stylesheet">
+    <link href="style/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/Phone-shop/style/swiper.css">
-    <link rel="stylesheet" href="/Phone-shop/style/stylecust.css">
-    <link rel="icon" type="image/png" href="/Phone-shop/image/logo.png"/>
+    <link rel="stylesheet" href="style/swiper.css">
+    <link rel="stylesheet" href="style/stylecust.css">
+    <link rel="icon" type="image/png" href="image/logo.png"/>
 </head>
 
 <body class="bg-gray-900">
@@ -20,7 +20,6 @@
     <dotlottie-player id="lottie-player" style="position: fixed; z-index: 10; cursor: pointer; z-index: 5000;"
         src="https://lottie.host/833cd667-c5e4-4959-9e6d-06e47cf02925/HKjm8waBqx.lottie" background="#4E3A81"
         speed=".102" style="width: 300px; height: 300px" width=""></dotlottie-player>
-    <!-- nav -->
     <div class="flex justify-center">
         <nav id="header"
             class="container mx-auto flex items-center justify-between md:px-0 !ps-2 !pe-4 !-top-[2.5px] z-50">
@@ -45,28 +44,26 @@
             </div>
         </nav>
 
-        <!-- shopping button -->
         <div id="button_shopping" class="!fixed bottom-5 left-5 glass p-4 flex items-center cursor-pointer z-200">
             <span id="total_shopping"
                 class="!flex !items-center py-.5 px-1.5 text-sm bg-red-500 !absolute rounded-full top-1.5 left-1.5 animate-pulse">0</span>
             <i class="fa-solid fa-cart-shopping"></i>
         </div>
 
-        <!-- menu -->
         <div class="!fixed bottom-5 right-5 flex items-center flex-row-reverse z-40">
             <div id="button_menu" class="glass glass_carusel px-4 py-5  flex items-center cursor-pointer"
                 onclick="this.classList.toggle('!rounded-s-none')
-                          this.classList.toggle('after:!rounded-s-none')
-                          this.classList.toggle('before:!rounded-s-none')
-                          this.nextElementSibling.classList.toggle('hidden')
-                          setTimeout(() => {
-                            this.nextElementSibling.classList.toggle('w-full')
-                          }, 50);">
+                                 this.classList.toggle('after:!rounded-s-none')
+                                 this.classList.toggle('before:!rounded-s-none')
+                                 this.nextElementSibling.classList.toggle('hidden')
+                                 setTimeout(() => {
+                                   this.nextElementSibling.classList.toggle('w-full')
+                                 }, 50);">
                 <i class="fa-solid fa-bars"></i>
             </div>
             <div
                 class="glass glass_carusel w-0 hidden transition-[width] duration-1000 flex-row-reverse p-3 flex items-center gap-1 !rounded-e-none after:!rounded-e-none before:!rounded-e-none">
-                <a href="/pages/add.html" class="glass glass_carusel p-2 flex items-center hover:cursor-pointer"
+                <a href="pages/add.html" class="glass glass_carusel p-2 flex items-center hover:cursor-pointer"
                     onmouseover="this.classList.remove('glass_carusel')"
                     onmouseout="this.classList.add('glass_carusel')">
                     <svg width="15px" height="15px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -75,7 +72,7 @@
                     </svg>
                 </a>
 
-                <a href="/pages/edit&delete.html"
+                <a href="pages/edit&delete.html"
                     class="glass glass_carusel p-2 flex items-center gap-1 text-[15px] !text-[#ffffff6b] hover:cursor-pointer"
                     onmouseover="this.classList.remove('glass_carusel')"
                     onmouseout="this.classList.add('glass_carusel')">
@@ -83,7 +80,7 @@
                     <i class="fa-solid fa-trash"></i>
                 </a>
 
-                <a href="/pages/shopping.html"
+                <a href="pages/shopping.html"
                     class="glass glass_carusel p-2 flex items-center gap-1 text-[15px] !text-[#ffffff6b] hover:cursor-pointer"
                     onmouseover="this.classList.remove('glass_carusel')"
                     onmouseout="this.classList.add('glass_carusel')">
@@ -93,39 +90,31 @@
         </div>
     </div>
 
-    <!-- Review -->
     <section id="review" class="container mx-auto px-2 md:px-0  flex">
         <div class="w-3/5  mx-auto md:mr-0 md:ml-15">
-            <!-- Left -->
             <div id="default-carousel" class="relative w-full glass glass_carusel" data-carousel="slide">
-                <!-- Carousel wrapper -->
                 <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                    <!-- Item 1 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/image/image.png"
+                        <img src="image/image.png"
                             class="absolute block  h-full  object-contain pb-8 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             alt="...">
                     </div>
-                    <!-- Item 2 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/image/iphone2.png"
-                            class="absolute block h-full   object-contain pb-8 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        <img src="image/iphone2.png"
+                            class="absolute block h-full    object-contain pb-8 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             alt="...">
                     </div>
-                    <!-- Item 3 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/image/sm-ultra.png"
+                        <img src="image/sm-ultra.png"
                             class="absolute block h-full object-contain pb-8 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             alt="...">
                     </div>
-                    <!-- Item 4 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/image/sm-ultra2.png"
+                        <img src="image/sm-ultra2.png"
                             class="absolute block h-full  object-contain pb-10 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             alt="...">
                     </div>
                 </div>
-                <!-- Slider indicators -->
                 <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
                     <button type="button" class="w-5 h-3 rounded-full glass  !bg-gray-700" aria-current="true"
                         aria-label="Slide 1" data-carousel-slide-to="0"></button>
@@ -136,12 +125,9 @@
                     <button type="button" class="w-5 h-3 rounded-full glass !bg-gray-700" aria-current="false"
                         aria-label="Slide 4" data-carousel-slide-to="3"></button>
                 </div>
-                <!-- Slider controls -->
-            </div>
+                </div>
 
         </div>
-
-        <!-- Right -->
 
         <div class="w-4/12 lg:w-3/12 glass glass_carusel flex justify-center md:ml-5">
 
@@ -150,14 +136,14 @@
                 <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
 
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/image/iphone3.png"
+                        <img src="image/iphone3.png"
                             class="absolute block  h-full ml-5  object-contain  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             alt="...">
                     </div>
 
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/image/iphone4.png"
-                            class="absolute block  h-full   object-contain  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        <img src="image/iphone4.png"
+                            class="absolute block  h-full    object-contain  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             alt="...">
                     </div>
                 </div>
@@ -166,39 +152,33 @@
         </div>
     </section>
 
-    <!-- item apple -->
     <section id="apple" class="container mx-auto mt-5 xxxs:mt-19 w-full !relative px-1 xxs:mt-45 md:px-0">
         <div class=" mySwiper">
             <div class="swiper-wrapper flex flex-col">
 
-                <!-- offer tag-->
                 <div
                     class="offer w-fit p-3 flex items-center left-4 font-semibold h-fit  glass glass_carusel !rounded-b-none">
                     Apple Offers
                 </div>
-                <!-- Arrow -->
                 <div class="w-50  flex flex-row-reverse gap-4 !absolute right-0 me-10 z-10 top-1">
                     <span onmouseover="this.classList.remove('glass_carusel')"
                         onmouseout="this.classList.add('glass_carusel')"
                         class="button-next text-2xl glass glass_carusel  w-11 h-11 !flex !justify-center !items-center hover:cursor-pointer !rounded-b-none"><i
-                            class="fa-solid fa-location-arrow" style="rotate: 44deg;"></i></span>
+                                class="fa-solid fa-location-arrow" style="rotate: 44deg;"></i></span>
                     <span onmouseover="this.classList.remove('glass_carusel')"
                         onmouseout="this.classList.add('glass_carusel')"
                         class="button-prev text-2xl glass glass_carusel  w-11 h-11 !flex !justify-center !items-center hover:cursor-pointer !rounded-b-none"><i
-                            class="fa-solid fa-location-arrow" style="rotate: 226deg;"></i></span>
+                                class="fa-solid fa-location-arrow" style="rotate: 226deg;"></i></span>
                 </div>
-                <!-- Items carusel -->
                 <div class=" glass glass_carusel">
                     <div class="flex  swiper mySwiper  !p-4">
                         <div id="apple_offers" class="swiper-wrapper  mx-auto">
-                            <!-- item apple offer js -->
-                        </div>
+                            </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- items -->
         <div class="relative mt-10 after_connect z-10">
             <div class="after_connect_child"></div>
             <div id="item_apple_continar_parent" class="h-4 !overflow-hidden">
@@ -207,8 +187,7 @@
                     <div id="item_apple_continar"
                         class=" mt-[.499px] before:!top-1 before:!shadow-[0_-20px_30px_rgba(236,233,233,0.486)]  h-0 transition-all duration-1000 ">
                         <div id="item_apple" class="flex  !p-4 gap-2 flex-wrap">
-                            <!-- items apple js -->
-                        </div>
+                            </div>
 
                     </div>
                 </div>
@@ -224,41 +203,34 @@
 
 
 
-    <!-- item android -->
     <section id="android" class="container mx-auto mt-5 w-full !relative px-1  md:px-0">
         <div class=" mySwiperAndroid">
             <div class="swiper-wrapper flex flex-col">
 
-                <!-- offer tag-->
                 <div
                     class="offer w-fit p-3 flex items-center left-4 font-semibold h-fit  glass glass_carusel !rounded-b-none">
                     android Offers
                 </div>
-                <!-- Arrow -->
                 <div class="w-50  flex flex-row-reverse gap-4 !absolute right-0 me-10 z-10 top-1">
                     <span onmouseover="this.classList.remove('glass_carusel')"
                         onmouseout="this.classList.add('glass_carusel')"
                         class="button-next-Android text-2xl glass glass_carusel  w-11 h-11 !flex !justify-center !items-center hover:cursor-pointer !rounded-b-none"><i
-                            class="fa-solid fa-location-arrow" style="rotate: 44deg;"></i></span>
+                                class="fa-solid fa-location-arrow" style="rotate: 44deg;"></i></span>
                     <span onmouseover="this.classList.remove('glass_carusel')"
                         onmouseout="this.classList.add('glass_carusel')"
                         class="button-prev-Android text-2xl glass glass_carusel  w-11 h-11 !flex !justify-center !items-center hover:cursor-pointer !rounded-b-none"><i
-                            class="fa-solid fa-location-arrow" style="rotate: 226deg;"></i></span>
+                                class="fa-solid fa-location-arrow" style="rotate: 226deg;"></i></span>
                 </div>
-                <!-- Items carusel -->
                 <div class=" glass glass_carusel">
                     <div class="flex  swiper mySwiperAndroid  !p-4">
                         <div id="android_offers" class="swiper-wrapper  mx-auto">
 
-                            <!-- items offer android js -->
-
-                        </div>
+                            </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- items -->
         <div class="relative mt-10 after_connect z-10">
             <div class="after_connect_child"></div>
             <div id="item_android_continar_parent" class="h-4 !overflow-hidden">
@@ -267,8 +239,7 @@
                     <div id="item_android_continar"
                         class=" mt-[.499px] before:!top-1 before:!shadow-[0_-20px_30px_rgba(236,233,233,0.486)]  h-0 transition-all duration-1000 ">
                         <div id="item_android" class="flex  !p-4 gap-2 flex-wrap">
-                            <!-- items apple js -->
-                        </div>
+                            </div>
 
                     </div>
                 </div>
@@ -283,49 +254,29 @@
 
 
 
-    <!-- shopping -->
     <div id="shopping_continar"
         class="transition-all duration-500 ease-in-out h-screen glass glass_carusel w-3/4  sm:w-1/2 md:w-2/5 lg:w-1/3 xl:w-1/4 -right-full !rounded-r-none after:!rounded-r-none before:!rounded-r-none !fixed top-0 z-50">
         <div id="shopping" class="py-5 flex flex-col gap-2 max-h-screen !overflow-y-auto !max-h-15/16">
-            <!-- items shopp -->
-
-        </div>
+            </div>
         <div id="total_price_parent"
             class="glass glass_carusel flex justify-center items-center p-2 !text-[#ffffff85] font-semibold !rounded-r-none after:!rounded-r-none before:!rounded-r-none">
             total $<span id="total_price">0</span>
         </div>
     </div>
 
-    <!-- details product -->
     <div id="details"
         class="fixed top-0 left-0 w-screen h-screen flex items-center justify-center sm:p-10 z-2000 hidden">
         <div class="glass glass_carusel w-full p-5 flex items-center">
 
 
             <div id="default-carousel" class="relative !w-1/2" data-carousel="slide">
-                <!-- Carousel wrapper -->
                 <div class="imagesProduct relative h-56 overflow-hidden rounded-base md:h-96 ">
-                    <!-- images -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/pages/image_glass/glassimage.jpg"
+                        <img src="pages/image_glass/glassimage.jpg"
                             class="absolute block w-1/2 h-1/2 sm:w-full sm:h-full object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             alt="...">
                     </div>
                 </div>
-                <!-- Slider indicators -->
-                <!-- <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-                    <button type="button" class="w-3 h-3 rounded-base" aria-current="true" aria-label="Slide 1"
-                        data-carousel-slide-to="0"></button>
-                    <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 2"
-                        data-carousel-slide-to="1"></button>
-                    <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 3"
-                        data-carousel-slide-to="2"></button>
-                    <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 4"
-                        data-carousel-slide-to="3"></button>
-                    <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 5"
-                        data-carousel-slide-to="4"></button>
-                </div> -->
-                <!-- Slider controls -->
                 <button type="button"
                     class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                     data-carousel-prev>
@@ -359,9 +310,8 @@
                 Apple iPhone 16 Pro Max – Stunning 6.9-inch display, Titanium design, advanced triple camera system.
             </div>
 
-            <!-- Close -->
             <div class="glass glass_carusel !text-[#ffffff42] p-2 flex items-center !text-2xl hover:cursor-pointer !absolute
-                        top-1 right-0.5" onmouseover="this.classList.remove('glass_carusel')"
+                             top-1 right-0.5" onmouseover="this.classList.remove('glass_carusel')"
                 onmouseout="this.classList.add('glass_carusel')"
                 onclick="document.getElementById('details').classList.add('hidden')">
                 <i class="far fa-times-circle"></i>
@@ -371,8 +321,8 @@
 
 
     <div class="glass glass_carusel before:!bg-transparent  after:!bg-transparent flex items-center justify-center p-1.5 text-[13px]
-                !rounded-s-none after:!rounded-s-none before:!rounded-s-none
-                !rounded-e-none after:!rounded-e-none before:!rounded-e-none">
+                 !rounded-s-none after:!rounded-s-none before:!rounded-s-none
+                 !rounded-e-none after:!rounded-e-none before:!rounded-e-none">
         © 2025 ZockChin. All Rights Reserved.
     </div>
 
@@ -380,9 +330,9 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
 <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-<script src="/Phone-shopjs/products.js"></script>
-<script src="/Phone-shopjs/script.js"></script>
-<script src="/Phone-shopjs/SharedFile.js"></script>
-<script src="/Phone-shopjs/swiper.js"></script>
+<script src="js/products.js"></script>
+<script src="js/script.js"></script>
+<script src="js/SharedFile.js"></script>
+<script src="js/swiper.js"></script>
 
 </html>
