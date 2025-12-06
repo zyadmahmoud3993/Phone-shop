@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@source "../node_modules/flowbite";
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+
+@theme {
+  --breakpoint-xs: 37rem;
+  --breakpoint-xxs: 30rem;
+  --breakpoint-xxxs: 25rem;
+
+}
