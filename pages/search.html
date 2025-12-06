@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Market</title>
+    <link href="/../style/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/../style/swiper.css">
+    <link rel="stylesheet" href="/../style/stylecust.css">
+    <link rel="icon" type="image/png" href="/image/logo.png"/>
+    <link rel="icon" type="image/png" href="/image/logo.png"/>
+</head>
+
+<body class="bg-gray-900">
+    <!-- nav -->
+    <div class="flex justify-center">
+        <nav id="header"
+            class="container mx-auto flex items-center justify-between md:px-0 !ps-2 !pe-4 !-top-[2.5px] z-50">
+            <div>
+                <img src="/../image/logo.png" alt="" width="90">
+            </div>
+            <div id="links_nav"
+                class=" link_glass glass_link before:top-0.5 pt-2 pb-2 px-15 relative flex items-center me-1">
+                <a href="#apple" onmouseover="this.classList.remove('glass_link')"
+                    onmouseout="this.classList.add('glass_link')"
+                    class="!text-[#4400ff59] font-bold link_nav link_glass glass_link hidden  apple p-3 flex items-center justify-center !rounded-b-none after:!rounded-b-none before:!rounded-b-none  ">Apple</a>
+            </div>
+            <div id="div_search"
+                class="w-9 h-10 flex items-center glass px-2  transition-all duration-1000 ease-[cubic-bezier(0.36,0,0.66,-0.56)]">
+                <i id="icon_search" class="fa-brands fa-searchengin text-2xl  !text-[#ffffff63]"></i>
+                <input id="input_search" class=" outline-none w-full p-2 hidden" type="search" name="" id=""
+                    placeholder="Search">
+            </div>
+        </nav>
+    </div>
+
+    <div>
+        <!-- shopping button -->
+        <div id="button_shopping" class="!fixed bottom-5 left-5 glass p-4 flex items-center cursor-pointer z-200">
+            <span id="total_shopping"
+                class="!flex !items-center py-.5 px-1.5 text-sm bg-red-500 !absolute rounded-full top-1.5 left-1.5 animate-pulse">0</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+
+        <!-- shopping -->
+        <div id="shopping_continar"
+            class="transition-all duration-500 ease-in-out h-screen glass glass_carusel w-3/4  sm:w-1/2 md:w-2/5 lg:w-1/3 xl:w-1/4 -right-full !rounded-r-none after:!rounded-r-none before:!rounded-r-none !fixed top-0 z-50">
+            <div id="shopping" class="py-5 flex flex-col gap-2 max-h-screen !overflow-y-auto !max-h-15/16">
+                <!-- items shopp -->
+
+            </div>
+            <div id="total_price_parent"
+                class="glass glass_carusel flex justify-center items-center p-2 !text-[#ffffff85] font-semibold !rounded-r-none after:!rounded-r-none before:!rounded-r-none">
+                total $<span id="total_price">0</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- item  -->
+    <section id="itemParent" class="container mx-auto mt-5 mb-5 w-full !relative px-1  md:px-0">
+        <!-- items -->
+        <div class="relative">
+            <div id="itemContinar"
+                class="glass glass_carusel !p-4 mt-[.499px] before:!top-1 before:!shadow-[0_-20px_30px_rgba(236,233,233,0.486)] transition-all duration-1000">
+                <div id="items" class="flex  gap-2 flex-wrap max-h-[calc((380px*3)+2.5rem)] overflow-y-scroll">
+                    <!-- items js -->
+                    
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- details product -->
+    <div id="details" class="fixed top-0 left-0 w-screen h-screen flex items-center justify-center sm:p-10 z-2000 hidden">
+        <div class="glass glass_carusel w-full p-5 flex items-center">
+
+
+            <div id="default-carousel" class="relative !w-1/2" data-carousel="slide">
+                <!-- Carousel wrapper -->
+                <div class="imagesProduct relative h-56 overflow-hidden rounded-base md:h-96 ">
+                    <!-- images -->
+                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="/pages/image_glass/glassimage.jpg"
+                            class="absolute block w-1/2 h-1/2 sm:w-full sm:h-full object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            alt="...">
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <!-- <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                    <button type="button" class="w-3 h-3 rounded-base" aria-current="true" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+                    <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 4"
+                        data-carousel-slide-to="3"></button>
+                    <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 5"
+                        data-carousel-slide-to="4"></button>
+                </div> -->
+                <!-- Slider controls -->
+                <button type="button"
+                    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-3 h-3 sm:w-7 sm:h-7 md:w-10 md:h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-white rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m15 19-7-7 7-7" />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-3 h-3 sm:w-7 sm:h-7 md:w-10 md:h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-white rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m9 5 7 7-7 7" />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+
+
+            <div class="textTitle w-1/2 text-center font-bold !text-[#ffffff8a]">
+                Apple iPhone 16 Pro Max – Stunning 6.9-inch display, Titanium design, advanced triple camera system.
+            </div>
+
+            <!-- Close -->
+            <div class="glass glass_carusel !text-[#ffffff42] p-2 flex items-center !text-2xl hover:cursor-pointer !absolute
+                        top-1 right-0.5"
+                onmouseover="this.classList.remove('glass_carusel')" onmouseout="this.classList.add('glass_carusel')"
+                onclick="document.getElementById('details').classList.add('hidden')">
+                <i class="far fa-times-circle"></i>
+            </div>
+        </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
+<script src="/../js/products.js"></script>
+<script src="/../js/SharedFile.js"></script>
+<script src="/../js/swiper.js"></script>
+<script src="/../js/scripSrearch.js"></script>
+
+</html>
