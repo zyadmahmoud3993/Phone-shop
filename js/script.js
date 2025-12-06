@@ -82,7 +82,7 @@ function add_item_apple_offers() {
                                 </div>
                                 
                                   <div class="h-40  md:!h-45 !relative !top-0 hover:cursor-pointer" onclick="details('${dt.id}')">
-                                    <img class="p-3 rounded-t-lg   flex justify-center items-center" src="${dt.image[0]}" alt="product image" loading="lazy"/>
+                                    <img class="p-3 rounded-t-lg   flex justify-center items-center" src="/Phone-shop/${dt.image[0]}" alt="product image" loading="lazy"/>
                                   </div>  
                                 
                                 <div class="px-5 pb-5">
@@ -149,7 +149,7 @@ function add_item_apple_offers() {
                                 </div>
                                 
                                   <div class="h-40  md:!h-45 !relative !top-0 hover:cursor-pointer" onclick="details('${dt.id}')">
-                                    <img class="p-3 rounded-t-lg   flex justify-center items-center" src="${dt.image[0]}" alt="product image" loading="lazy"/>
+                                    <img class="p-3 rounded-t-lg   flex justify-center items-center" src="/Phone-shop/${dt.image[0]}" alt="product image" loading="lazy"/>
                                   </div>  
                                 
                                 <div class="px-5 pb-5">
@@ -223,7 +223,7 @@ function add_item_apple() {
                     <span
                         class="!absolute !z-50 top-0.5 right-0.5 glass glass_carusel py-3 px-5 offer_card_right text-sm font-bold flex items-center ${dt.condition.includes('A') ? 'bg-[#00ff153b]' : dt.condition.includes('B') ? 'bg-[#fffb0052]' : dt.condition.includes('C') ? 'bg-[#ff00003b]' : ''}">${dt.condition}</span>
                     <div class="hover:cursor-pointer" onclick="details('${dt.id}')">
-                        <img class="p-3 rounded-t-lg !h-45 " src="${dt.image[0]}" alt="product image" loading="lazy" />
+                        <img class="p-3 rounded-t-lg !h-45 " src="/Phone-shop/${dt.image[0]}" alt="product image" loading="lazy" />
                     </div>
                     <div class="px-5 pb-5">
                         <p>
@@ -279,7 +279,7 @@ function add_item_apple() {
                     <span
                         class="!absolute !z-50 top-0.5 right-0.5 glass glass_carusel py-3 px-5 offer_card_right text-sm font-bold flex items-center ${dt.condition.includes('A') ? 'bg-[#00ff153b]' : dt.condition.includes('B') ? 'bg-[#fffb0052]' : dt.condition.includes('C') ? 'bg-[#ff00003b]' : ''}">${dt.condition}</span>
                     <div class="hover:cursor-pointer" onclick="details('${dt.id}')">
-                        <img class="p-3 rounded-t-lg !h-45 " src="${dt.image[0]}" alt="product image" loading="lazy" />
+                        <img class="p-3 rounded-t-lg !h-45 " src="/Phone-shop/${dt.image[0]}" alt="product image" loading="lazy" />
                     </div>
                     <div class="px-5 pb-5">
                         <p>
@@ -354,7 +354,7 @@ function add_shopping(elemnt) {
                       onclick="delete_item_shopping('${get_id}')"><i class="fa-solid fa-trash"></i></div>
               </div>
               <div class="item_shopping flex items-center gap-2 glass glass_carusel p-3 !h-22.5 !shrink-0 !rounded-r-none after:!rounded-r-none before:!rounded-r-none shopp_item">
-                <img class="!w-1/3 !h-full !flex  shrink-0 !justify-center object-contain" src="${image}" alt="">
+                <img class="!w-1/3 !h-full !flex  shrink-0 !justify-center object-contain" src="/Phone-shop/${image}" alt="">
                 <p class="w-full overflow-hidden text-nowrap !text-ellipsis !text-[#ffffff85] font-bold">${title}</p>
                 <div class="flex items-center text-xl gap-1">
                     <button class="glass glass_carusel cursor-pointer !text-[#ffffff6b] !pt-[0px] pb-1  px-3.5 font-bold !rounded-sm after:!rounded-sm before:!rounded-sm flex items-center" 
